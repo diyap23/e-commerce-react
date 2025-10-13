@@ -1,0 +1,83 @@
+React :
+- external library
+- helps us to create website easier
+
+External Library :
+- code that is outside our computer
+- code that someonw else wrote
+
+React : shared features
+React dom : features specific to websites
+
+render : display 
+
+babel :
+- javascript compiler
+- translate jsx to js
+
+ ReactDOM.createRoot(container).render(div); --  place the element you want to display in the render()
+
+ /***** COMPONENTS *****/
+ - a piece of website  <ChatInput></ChatInput> 
+ - create our own html elements
+ - components name must start with a capital letter
+ -  must be in pascal case (PascalCase)
+
+ <input /> = <input></input>
+
+ - we can only return one value in the function
+
+  <ChatInput></ChatInput> - Component Syntax
+
+  <> : Fragments 
+
+  props : property = every component function gets one parameter  
+  - props parameter is an object 
+  - it contains all the attributes that we give to the component
+  - props make our component reusable
+
+  -- best practice is to use component(App) to create the website
+  
+  Destructing, Guard Operator(&&)
+
+  /****** STATE ******/
+  - helps to make our website interactive
+  -
+
+  .map() - let us go through each value of an array and convert it into a 
+  new value
+
+  [
+    value1, ----------- newValue1,
+    value2, ----------- newValue2,
+  ]
+
+  arrow function => works the same way as function, but its shorter
+
+  /****** EVENT HANDLERS ******/
+  - run a fucntion when we interact with the website
+  {} = save any type of value in a prop (including a function)
+  .push() => add the value at the end of an array
+
+  crypto.randomUUID() : generate the unique ID string
+
+  ... -> Spread Operator : takes the value in an array, and copies them 
+  into a new array
+
+  /******** STATE ********/
+  - State = data that is connected to the HTML
+  - When we update this data, it will update the HTML 
+  - state = save data that change over time
+
+  onChange : runs a function when we change the text inside an <input>
+
+  event.target = gives us the element that we're typing in
+
+
+  LIFTING THE STATE UP : share state between multiple components
+
+  {} = save any type of value inside the prop
+
+  controlled input = remove the input text from the input area once it is submitted
+  
+  value = change the text inside this <input>
