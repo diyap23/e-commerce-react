@@ -87,3 +87,7 @@ babel :
   - create multiple pages in React
   
   <Routes> : tells React all the pages that are in our website
+
+  Link elements <a> reload the page
+
+  <Link> : go to another page without loading
