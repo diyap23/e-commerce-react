@@ -81,3 +81,9 @@ babel :
   controlled input = remove the input text from the input area once it is submitted
   
   value = change the text inside this <input>
+
+
+  /****** ROUTING ******/
+  - create multiple pages in React
+  
+  <Routes> : tells React all the pages that are in our website
