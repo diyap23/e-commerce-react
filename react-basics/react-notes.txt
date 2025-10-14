@@ -91,3 +91,8 @@ babel :
   Link elements <a> reload the page
 
   <Link> : go to another page without loading
+
+  /******** USEEFFECT ********/
+  lets us control when some code runs
+
+  dependency array : let us control when useEffect runs
