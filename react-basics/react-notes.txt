@@ -96,3 +96,5 @@ babel :
   lets us control when some code runs
 
   dependency array : let us control when useEffect runs
+
+  /api -> these URL paths are for interacting with the backend
