@@ -174,8 +174,6 @@ export function CheckoutPage({ cart }) {
                                 </button>
                             </>
                         )}
-
-
                     </div>
                 </div>
             </div>
