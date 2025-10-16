@@ -6,7 +6,7 @@ import { CheckoutPage } from './pages/checkout/CheckoutPage';
 import { OrdersPage } from './pages/orders/OrdersPage';
 import { TrackingPage } from './pages/TrackingPage';
 import './App.css'
-import { use } from 'react';
+
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -25,7 +25,7 @@ function App() {
   return (
     <Routes>
       <Route index element={<HomePage cart={cart} loadCart={loadCart} />} />
-      <Route path="checkout" element={<CheckoutPage cart={cart} />} />
+      <Route path="checkout" element={<CheckoutPage cart={cart} loadCart={loadCart} />} />
       <Route path="orders" element={<OrdersPage cart={cart} />} />
       <Route path="tracking" element={<TrackingPage />} />
     </Routes>
