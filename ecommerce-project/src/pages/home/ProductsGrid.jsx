@@ -1,37 +1,18 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import {Header} from '../components/Header.jsx'
-import { formatMoney } from '../utils/money.js';
-import './HomePage.css'
+import { formatMoney } from '../../utils/money.js';
 
-export function HomePage({cart}) {
-    const [products, setProducts] = useState([]);
-   
-    useEffect(() => {
-        axios.get('/api/products')
-        .then((response) => {
-            setProducts(response.data);
-        });
-
-        
-    }, []); // Dependency array
-
+export function ProductsGrid({products}) {
     return (
-        <>
-            <Header cart={cart} />
-            
-            <div className="home-page">
-                <div className="products-grid">
-                    {products.map((product) => {
-                        return (
-                             <div key={product.id} className="product-container">
+        <div className="products-grid">
+            {products.map((product) => {
+                return (
+                    <div key={product.id} className="product-container">
                         <div className="product-image-container">
                             <img className="product-image"
                                 src={product.image} />
                         </div>
 
                         <div className="product-name limit-text-to-2-lines">
-                           {product.name}
+                            {product.name}
                         </div>
 
                         <div className="product-rating-container">
@@ -43,7 +24,7 @@ export function HomePage({cart}) {
                         </div>
 
                         <div className="product-price">
-                           {formatMoney(product.priceCents)}
+                            {formatMoney(product.priceCents)}
                         </div>
 
                         <div className="product-quantity-container">
@@ -72,11 +53,9 @@ export function HomePage({cart}) {
                             Add to Cart
                         </button>
                     </div>
-                        );
-                    })}
-    
-                </div>
-            </div>
-        </>
+                );
+            })}
+
+        </div>
     );
 }
