@@ -41,8 +41,8 @@ export function CheckoutPage({ cart, loadCart }) {
                     </div>
 
                     <div className="checkout-header-middle-section">
-                        Checkout (<a className="return-to-home-link"
-                            href="/">3 items</a>)
+                        Checkout Item(<a className="return-to-home-link"
+                            href="/"> s</a>)
                     </div>
 
                     <div className="checkout-header-right-section">
@@ -58,7 +58,8 @@ export function CheckoutPage({ cart, loadCart }) {
                     <OrderSummary cart={cart} deliveryOptions={deliveryOptions} 
                     loadCart={loadCart} />
 
-                    <PaymentSummary paymentSummary={paymentSummary}/>
+                    <PaymentSummary paymentSummary={paymentSummary}
+                    loadCart={loadCart} />
                 </div>
             </div>
         </>
